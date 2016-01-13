@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Banking Form</title>
+</head>
+
+<body>
+ <form action="form.html" method="POST">
+    <fieldset>
+      <legend>Fill out the following to the best of your ability</legend>
+      <label for="first-name" >Enter your first name</label>
+        <input type="text" name="first-name" autofocus>
+          <br/>
+      <label for="middle-initial">Enter your middle initial</label>
+        <input type="text" name="middle initial">
+          <br/>
+      <label for="last-name">Enter your last name</label>
+        <input type="text" name="last-name">
+          <br/>
+      <label for="address">Please enter your address</label>
+        <input type="text" name="address">
+          <br/>
+      <label for="occupation">What is your current occupation</label>
+        <input type="text" name="occupation">
+          </br>
+      <label for="employer">Who is your current employer</label>
+        <input type="text" name="employer">
+          </br>
+      <label for="employer-address">What is your current employers address</label>
+        <input type="text" name ="employer">
+    </fieldset>
+    <label for="type">Type of Loan</label>
+      <select id="feedback-type" name="type">
+        <option>Commercial</option>
+        <option>Real Estate</option>
+        <option>Personal</option>
+        <option>Mortgage</option>
+      </select>
+    <fieldset>
+      <legend>Mortage Amount</legend>
+        <label for="Mortgage Range">What amount are you requesting</label>
+        <input type="range" name="mortage-range" min="15'000" max="225'000" step="0.5" value="18.5">
+    </fieldset>
+    <fieldset>
+      <legend>Select your loan length</legend>
+        <input type="radio" name="loan-length" value="five">5 Years
+        <input type="radio" name="loan-length" value="fifteen">15 Years
+        <input type="radio" name="loan-length" value="thirty">30 Years 
+    </fieldset>       
+    <fieldset>
+      <legend>What type of customer are you?</legend>
+        <input type="checkbox" name="payment" value="payment"> I have a down payment
+        <input type="checkbox" name="resident" value="resident"> Out-of-state resident
+        <input type="checkbox" name="married" value="married"> Married
+        <input type="checkbox" name="sign" value="sign"> Loan will be co-signed
+    </fieldset>
+      <fieldset>
+        <legend>Additional Comments</legend>
+          <label for="comments">Comments</label>
+            <textarea id="comments" name="comments"></textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Email Goes Here</legend>
+        <label for="email-address">Enter your email address</label>
+          <input type="email" name="email" placeholder="you@somewhere.com">      
+    </fieldset>
+    <fieldset>
+      <legend>Phone Goes Here</legend>
+      <label for="telephone">Enter your mobile number</label>
+      <input type="tel" name="telephone" placeholder="888-888-8888">        
+    </fieldset>
+</body>
+</html>
